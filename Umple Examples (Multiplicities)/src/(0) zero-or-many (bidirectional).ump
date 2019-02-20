@@ -1,0 +1,9 @@
+namespace zeroormanybidirectional;
+
+class Discovery {
+    1 discovery -- * Comment comments;
+}
+
+class Comment {
+  text;
+}

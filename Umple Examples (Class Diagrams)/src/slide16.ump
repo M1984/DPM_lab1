@@ -1,0 +1,6 @@
+namespace slide16;
+
+class Student {
+  enum StudentType { Quebec, Canada, International }
+  StudentType studentType;
+}

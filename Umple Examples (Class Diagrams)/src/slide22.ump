@@ -1,0 +1,6 @@
+namespace slide22;
+
+class Course {
+  * prerequisite -- * Course successor;
+  * self mutuallyExclusive;
+}

@@ -1,0 +1,65 @@
+namespace ca.mcgill.ecse.btms.model;
+
+class BTMS {
+  1 <@>- * BusVehicle vehicles;
+  1 <@>- * Route routes 
+  1 <@>- * RouteAssignmeant assignment  
+  1 <@>- * Driver drivers 
+  1 <@>- * DriverSchedule schedule 
+  
+  public java.util.Date getCurrentDate() {
+    java.util.Calendar cal = java.util.Calendar.getInstance();
+    cal.set(Calendar.HOUR_OF_DAY, 0);
+    cal.set(Calendar.MINUTE, 0);
+    cal.set(Calendar.SECOND, 0);
+    cal.set(Calendar.MILLISECOND, 0);
+    java.util.Date date = cal.getTime();
+    return date;
+  }
+  
+}
+
+class BusVehicle {
+  String licencePlate;
+  before constructor, setLicencePlate {
+    if (aLicencePlate == null || aLicencePlate.length() == 0) {
+	  throw new RuntimeException("The licence plate of a bus cannot be empty.");
+	}
+	if (aLicencePlate.length() > 10) {
+	  throw new RuntimeException("The licence plate of a bus cannot be longer than 10 characters.");
+	}
+  }
+  Boolean inRepairShop;
+}
+
+class Route {
+  unique Integer number;
+  * -- 1 BusVehicle bus;
+  * -- 1 Route routes
+}
+
+class RouteAssignment {
+  Date dates;
+  1 -- * Driver drivers;
+  * -- 1 BusVehicle bus;
+}
+
+class Driver {
+  name;
+  before constructor, setName {
+  if (aName == null || aName.length()==0 ){
+  	throw new RuntimeException ("The name of a driver cannot be emoty")
+  	}
+  }
+  // TODO: validation for name
+  // TOOD: id
+  // TODO: onSickLeave
+}
+
+class DriverSchedule {
+  // TODO: enum Shift
+  // TODO: shift
+  * -- 1 Driver driver;
+  // TODO: assignment
+}
+

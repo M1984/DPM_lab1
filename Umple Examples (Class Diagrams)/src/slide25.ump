@@ -1,0 +1,10 @@
+namespace slide25;
+
+class Window {
+  1 <@>- 2 Slider scrollbar;
+  1 <@>- 0..1 Header title;
+  1 <@>- 1 Panel body;
+}
+class Slider { }
+class Header { }
+class Panel { }

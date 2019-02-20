@@ -1,0 +1,6 @@
+namespace slide27;
+
+class University {
+  singleton;
+  lazy String name;
+}

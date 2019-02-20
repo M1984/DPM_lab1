@@ -1,0 +1,9 @@
+namespace zerotofour;
+
+class Discovery {
+    1 discovery -> 0..4 Comment comments;
+}
+
+class Comment {
+  text;
+}

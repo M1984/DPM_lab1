@@ -1,0 +1,9 @@
+namespace slide24a;
+
+class Student {}
+class CourseSection {}
+associationClass Registration {
+  grade;
+  * Student;
+  * CourseSection;
+}

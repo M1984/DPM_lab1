@@ -1,0 +1,9 @@
+namespace zeroormany;
+
+class Discovery {
+    1 discovery -> * Comment comments;
+}
+
+class Comment {
+  text;
+}

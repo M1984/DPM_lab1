@@ -1,0 +1,6 @@
+namespace slide26;
+
+class Account {}
+class SavingsAccount { isA Account; }
+class CheckingAccount { isA Account; }
+class MortgageAccount { isA Account; }

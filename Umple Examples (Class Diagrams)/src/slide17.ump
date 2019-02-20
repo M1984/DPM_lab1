@@ -1,0 +1,15 @@
+namespace slide17;
+
+class Student { id; name; }
+
+class Course { description; code; }
+
+class CourseSection {
+  Date term;
+  sectionLetter;
+  1..* -- 1 Course;
+}
+
+association {
+   * CourseSection -- * Student registrant;
+}

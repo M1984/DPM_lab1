@@ -1,0 +1,7 @@
+namespace slide29;
+
+use slide29-file2.ump;
+
+class X {
+  Integer a;
+}

@@ -1,0 +1,7 @@
+namespace slide21;
+
+class Day {
+  1 -> * Note;
+}
+
+class Note {}

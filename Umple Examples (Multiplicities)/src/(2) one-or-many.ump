@@ -1,0 +1,9 @@
+namespace oneormany;
+
+class Discovery {
+    1 discovery -> 1..* Comment comments;
+}
+
+class Comment {
+  text;
+}
