@@ -1,0 +1,30 @@
+namespace ca.mcgill.ecse.btms.controller;
+
+class TOBusVehicle {
+  licencePlate;
+}
+
+class TORoute {
+  Integer number;
+}
+
+class TORouteAssignment {
+  Date date;
+  licencePlate;
+  Integer number;
+}
+
+class TODriver {
+  name;
+  Integer id;
+}
+
+class TODailyOverviewItem {
+  Integer number;
+  licencePlate;
+  Boolean inRepairShop;
+  shift;
+  Integer id;
+  name;
+  Boolean sick;
+}
